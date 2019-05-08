@@ -1,0 +1,15 @@
+{
+    "name": "xero-com-connector",
+    "version": "2.0.0",
+    "description": "# Introduction\nThe Xero Accounting API is a RESTful web service and uses the OAuth (v1.0a) protocol to authenticate 3rd party applications. The Accounting API exposes accounting and related functions of the main Xero application and can be used for a variety of purposes such as creating transactions like invoices and credit notes, right through to extracting accounting data via our reports endpoint.\n",
+    "main": "component.json",
+    "dependencies": {
+        "elasticio-node": "0.0.9",
+        "elasticio-sailor-nodejs": "^2.2.1",
+        "swagger-client": "^3.8.22"
+    },
+    "author": {
+        "name": "Deutsche Telekom AG"
+    },
+    "license": "Apache-2.0"
+}
