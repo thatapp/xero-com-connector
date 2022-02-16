@@ -1942,7 +1942,7 @@
         },
         "post_Items": {
             "main": "./lib/actions/post_Items.js",
-            "title": "Create or update an item",
+            "title": "Create items",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -1968,7 +1968,7 @@
         },
         "put_Items": {
             "main": "./lib/actions/put_Items.js",
-            "title": "Create an item",
+            "title": "Update an item",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
@@ -2042,7 +2042,7 @@
         },
         "post_Items__ItemID_": {
             "main": "./lib/actions/post_Items__ItemID_.js",
-            "title": "Update an item",
+            "title": "Create an item",
             "fields": {
                 "verbose": {
                     "viewClass": "CheckBoxView",
