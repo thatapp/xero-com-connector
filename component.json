@@ -543,23 +543,6 @@
                 }
             }
         },
-        "get_BankTransfers__BankTransferID__Attachments__FileName_": {
-            "main": "./lib/actions/get_BankTransfers__BankTransferID__Attachments__FileName_.js",
-            "title": "Download an Attachment",
-            "description": "Download an Attachment",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/get_BankTransfers__BankTransferID__Attachments__FileName_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
         "post_BankTransfers__BankTransferID__Attachments__FileName_": {
             "main": "./lib/actions/post_BankTransfers__BankTransferID__Attachments__FileName_.js",
             "title": "Upload an Attachment",
