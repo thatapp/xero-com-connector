@@ -5,7 +5,7 @@
     "main": "component.json",
     "dependencies": {
         "elasticio-node": "0.0.9",
-        "elasticio-sailor-nodejs": "^2.2.1",
+        "elasticio-sailor-nodejs": "2.6.26",
         "swagger-client": "^3.8.22"
     },
     "author": {
