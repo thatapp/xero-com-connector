@@ -30,6 +30,75 @@
         }
     },
     "actions": {
+        "get_Accounts": {
+            "main": "./lib/actions/get_Accounts.js",
+            "title": "Retrieve the full chart of accounts",
+            "description": "Retrieve the chart of accounts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_Accounts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_Accounts": {
+            "main": "./lib/actions/post_Accounts.js",
+            "title": "Create or update accounts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "application/xml": "application/xml"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_Accounts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_Accounts": {
+            "main": "./lib/actions/put_Accounts.js",
+            "title": "Update accounts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                },
+                "body_content_type": {
+                    "viewClass": "SelectView",
+                    "label": "Body Content-Type",
+                    "required": true,
+                    "prompt": "Choose a body Content-Type.",
+                    "model": {
+                        "application/json": "application/json",
+                        "application/xml": "application/xml"
+                    }
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_Accounts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
         "x_related_model_Accounts": {
             "main": "./lib/actions/x_related_model_Accounts.js",
             "title": "x_related_model_Accounts",
@@ -3811,318 +3880,7 @@
                     "type": "object"
                 }
             }
-        },
-        "x_related_model_TaxRates": {
-            "main": "./lib/actions/x_related_model_TaxRates.js",
-            "title": "x_related_model_TaxRates",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/x_related_model_TaxRates.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "get_TrackingCategories": {
-            "main": "./lib/actions/get_TrackingCategories.js",
-            "title": "Retrieve a collection of tracking categories and options",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/get_TrackingCategories.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "post_TrackingCategories": {
-            "main": "./lib/actions/post_TrackingCategories.js",
-            "title": "Create a tracking category",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                },
-                "body_content_type": {
-                    "viewClass": "SelectView",
-                    "label": "Body Content-Type",
-                    "required": true,
-                    "prompt": "Choose a body Content-Type.",
-                    "model": {
-                        "application/json": "application/json",
-                        "application/xml": "application/xml"
-                    }
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/post_TrackingCategories.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "put_TrackingCategories": {
-            "main": "./lib/actions/put_TrackingCategories.js",
-            "title": "Create a tracking category",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                },
-                "body_content_type": {
-                    "viewClass": "SelectView",
-                    "label": "Body Content-Type",
-                    "required": true,
-                    "prompt": "Choose a body Content-Type.",
-                    "model": {
-                        "application/json": "application/json",
-                        "application/xml": "application/xml"
-                    }
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/put_TrackingCategories.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "x_related_model_TrackingCategories": {
-            "main": "./lib/actions/x_related_model_TrackingCategories.js",
-            "title": "x_related_model_TrackingCategories",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/x_related_model_TrackingCategories.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "delete_TrackingCategories__TrackingCategoryID_": {
-            "main": "./lib/actions/delete_TrackingCategories__TrackingCategoryID_.js",
-            "title": "Delete a Tracking Category",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/delete_TrackingCategories__TrackingCategoryID_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "get_TrackingCategories__TrackingCategoryID_": {
-            "main": "./lib/actions/get_TrackingCategories__TrackingCategoryID_.js",
-            "title": "Retrieve a tracking category and it's options",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/get_TrackingCategories__TrackingCategoryID_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "post_TrackingCategories__TrackingCategoryID_": {
-            "main": "./lib/actions/post_TrackingCategories__TrackingCategoryID_.js",
-            "title": "Create or update a tracking category",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                },
-                "body_content_type": {
-                    "viewClass": "SelectView",
-                    "label": "Body Content-Type",
-                    "required": true,
-                    "prompt": "Choose a body Content-Type.",
-                    "model": {
-                        "application/json": "application/json",
-                        "application/xml": "application/xml"
-                    }
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/post_TrackingCategories__TrackingCategoryID_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "x_related_model_TrackingCategories__TrackingCategoryID_": {
-            "main": "./lib/actions/x_related_model_TrackingCategories__TrackingCategoryID_.js",
-            "title": "x_related_model_TrackingCategories__TrackingCategoryID_",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "put_TrackingCategories__TrackingCategoryID__Options": {
-            "main": "./lib/actions/put_TrackingCategories__TrackingCategoryID__Options.js",
-            "title": "Add options to a tracking category",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                },
-                "body_content_type": {
-                    "viewClass": "SelectView",
-                    "label": "Body Content-Type",
-                    "required": true,
-                    "prompt": "Choose a body Content-Type.",
-                    "model": {
-                        "application/json": "application/json",
-                        "application/xml": "application/xml"
-                    }
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/put_TrackingCategories__TrackingCategoryID__Options.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "x_related_model_TrackingCategories__TrackingCategoryID__Options": {
-            "main": "./lib/actions/x_related_model_TrackingCategories__TrackingCategoryID__Options.js",
-            "title": "x_related_model_TrackingCategories__TrackingCategoryID__Options",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID__Options.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "delete_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_": {
-            "main": "./lib/actions/delete_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_.js",
-            "title": "Delete an option from a tracking category",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/delete_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "x_related_model_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_": {
-            "main": "./lib/actions/x_related_model_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_.js",
-            "title": "x_related_model_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "get_Users": {
-            "main": "./lib/actions/get_Users.js",
-            "title": "Retrieve a collection of Users",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/get_Users.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "x_related_model_Users": {
-            "main": "./lib/actions/x_related_model_Users.js",
-            "title": "x_related_model_Users",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/x_related_model_Users.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "get_Users__UserID_": {
-            "main": "./lib/actions/get_Users__UserID_.js",
-            "title": "Retrieve an individual User",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/get_Users__UserID_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
-        },
-        "x_related_model_Users__UserID_": {
-            "main": "./lib/actions/x_related_model_Users__UserID_.js",
-            "title": "x_related_model_Users__UserID_",
-            "fields": {
-                "verbose": {
-                    "viewClass": "CheckBoxView",
-                    "label": "Debug this step (log more data)"
-                }
-            },
-            "metadata": {
-                "in": "./lib/schemas/x_related_model_Users__UserID_.in.json",
-                "out": {
-                    "type": "object"
-                }
-            }
         }
+
     }
 }
