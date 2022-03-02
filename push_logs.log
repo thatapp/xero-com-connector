@@ -1,0 +1,712 @@
+git commit -m="Updating the Xero Component"
+[master ee2493e] =Updating the Xero Component
+ 6 files changed, 38 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/xero-com-connector.iml
+williamnwogbo@Williams-MacBook-Pro xero-com-connector % git push origin master
+git Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.32 KiB | 1.32 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/thatapp/xero-com-connector.git
+   c6854f4..ee2493e  master -> master
+williamnwogbo@Williams-MacBook-Pro xero-com-connector % git push component master
+Enter passphrase for key '/Users/williamnwogbo/.ssh/yub':
+    Enumerating objects: 406, done.
+Counting objects: 100% (406/406), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (51/51), done.
+Writing objects: 100% (406/406), 506.98 KiB | 101.40 MiB/s, done.
+Total 406 (delta 355), reused 394 (delta 351), pack-reused 0
+remote: Resolving deltas: 100% (355/355), done.
+remote: Received push to: hoist@git.elastic.io/Xero-com-connector.git
+remote: Team: hoist
+remote: Repository: Xero-com-connector
+remote: Revision: ee2493ecc624baa91240a29c3432b3197e21c546
+remote: Build ID: 60b2ce0f-a84f-4c71-86a9-6717505fde54
+remote: Successfully validated parameters
+remote: Authorizing access of hoist to Xero-com-connector
+remote: (node:10441) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+remote: (node:10441) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+remote: Validating component
+remote: Reading incoming component.json
+remote: Parsing incoming component.json
+remote: Found 1 triggers and 219 actions
+remote: Found metadata for get_Accounts
+                           remote: Reading incoming ./lib/schemas/get_Accounts.in.json
+remote: Found metadata for post_Accounts
+                           remote: Reading incoming ./lib/schemas/post_Accounts.in.json
+remote: Found metadata for put_Accounts
+                           remote: Reading incoming ./lib/schemas/put_Accounts.in.json
+remote: Found metadata for x_related_model_Accounts
+                           remote: Reading incoming ./lib/schemas/x_related_model_Accounts.in.json
+remote: Found metadata for delete_Accounts__AccountID_
+                           remote: Reading incoming ./lib/schemas/delete_Accounts__AccountID_.in.json
+remote: Found metadata for get_Accounts__AccountID_
+                           remote: Reading incoming ./lib/schemas/get_Accounts__AccountID_.in.json
+remote: Found metadata for post_Accounts__AccountID_
+                           remote: Reading incoming ./lib/schemas/post_Accounts__AccountID_.in.json
+remote: Found metadata for x_related_model_Accounts__AccountID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Accounts__AccountID_.in.json
+remote: Found metadata for get_Accounts__AccountID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_Accounts__AccountID__Attachments.in.json
+remote: Found metadata for get_Accounts__AccountID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_Accounts__AccountID__Attachments__FileName_.in.json
+remote: Found metadata for post_Accounts__AccountID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_Accounts__AccountID__Attachments__FileName_.in.json
+remote: Found metadata for get_BankTransactions
+                           remote: Reading incoming ./lib/schemas/get_BankTransactions.in.json
+remote: Found metadata for post_BankTransactions
+                           remote: Reading incoming ./lib/schemas/post_BankTransactions.in.json
+remote: Found metadata for put_BankTransactions
+                           remote: Reading incoming ./lib/schemas/put_BankTransactions.in.json
+remote: Found metadata for x_related_model_BankTransactions
+                           remote: Reading incoming ./lib/schemas/x_related_model_BankTransactions.in.json
+remote: Found metadata for get_BankTransactions__BankTransactionID_
+                           remote: Reading incoming ./lib/schemas/get_BankTransactions__BankTransactionID_.in.json
+remote: Found metadata for post_BankTransactions__BankTransactionID_
+                           remote: Reading incoming ./lib/schemas/post_BankTransactions__BankTransactionID_.in.json
+remote: Found metadata for x_related_model_BankTransactions__BankTransactionID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_BankTransactions__BankTransactionID_.in.json
+remote: Found metadata for get_BankTransactions__BankTransactionID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_BankTransactions__BankTransactionID__Attachments.in.json
+remote: Found metadata for get_BankTransactions__BankTransactionID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_BankTransactions__BankTransactionID__Attachments__FileName_.in.json
+remote: Found metadata for post_BankTransactions__BankTransactionID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_BankTransactions__BankTransactionID__Attachments__FileName_.in.json
+remote: Found metadata for get_BankTransfers
+                           remote: Reading incoming ./lib/schemas/get_BankTransfers.in.json
+remote: Found metadata for put_BankTransfers
+                           remote: Reading incoming ./lib/schemas/put_BankTransfers.in.json
+remote: Found metadata for x_related_model_BankTransfers
+                           remote: Reading incoming ./lib/schemas/x_related_model_BankTransfers.in.json
+remote: Found metadata for get_BankTransfers__BankTransferID_
+                           remote: Reading incoming ./lib/schemas/get_BankTransfers__BankTransferID_.in.json
+remote: Found metadata for x_related_model_BankTransfers__BankTransferID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_BankTransfers__BankTransferID_.in.json
+remote: Found metadata for get_BankTransfers__BankTransferID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_BankTransfers__BankTransferID__Attachments__FileName_.in.json
+remote: Found metadata for post_BankTransfers__BankTransferID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_BankTransfers__BankTransferID__Attachments__FileName_.in.json
+remote: Found metadata for get_BrandingThemes
+                           remote: Reading incoming ./lib/schemas/get_BrandingThemes.in.json
+remote: Found metadata for x_related_model_BrandingThemes
+                           remote: Reading incoming ./lib/schemas/x_related_model_BrandingThemes.in.json
+remote: Found metadata for get_BrandingThemes__BrandingThemeID_
+                           remote: Reading incoming ./lib/schemas/get_BrandingThemes__BrandingThemeID_.in.json
+remote: Found metadata for x_related_model_BrandingThemes__BrandingThemeID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_BrandingThemes__BrandingThemeID_.in.json
+remote: Found metadata for get_ContactGroups
+                           remote: Reading incoming ./lib/schemas/get_ContactGroups.in.json
+remote: Found metadata for post_ContactGroups
+                           remote: Reading incoming ./lib/schemas/post_ContactGroups.in.json
+remote: Found metadata for put_ContactGroups
+                           remote: Reading incoming ./lib/schemas/put_ContactGroups.in.json
+remote: Found metadata for x_related_model_ContactGroups
+                           remote: Reading incoming ./lib/schemas/x_related_model_ContactGroups.in.json
+remote: Found metadata for delete_ContactGroups__ContactGroupID_
+                           remote: Reading incoming ./lib/schemas/delete_ContactGroups__ContactGroupID_.in.json
+remote: Found metadata for get_ContactGroups__ContactGroupID_
+                           remote: Reading incoming ./lib/schemas/get_ContactGroups__ContactGroupID_.in.json
+remote: Found metadata for post_ContactGroups__ContactGroupID_
+                           remote: Reading incoming ./lib/schemas/post_ContactGroups__ContactGroupID_.in.json
+remote: Found metadata for x_related_model_ContactGroups__ContactGroupID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_ContactGroups__ContactGroupID_.in.json
+remote: Found metadata for delete_ContactGroups__ContactGroupID__Contacts
+                           remote: Reading incoming ./lib/schemas/delete_ContactGroups__ContactGroupID__Contacts.in.json
+remote: Found metadata for put_ContactGroups__ContactGroupID__Contacts
+                           remote: Reading incoming ./lib/schemas/put_ContactGroups__ContactGroupID__Contacts.in.json
+remote: Found metadata for x_related_model_ContactGroups__ContactGroupID__Contacts
+                           remote: Reading incoming ./lib/schemas/x_related_model_ContactGroups__ContactGroupID__Contacts.in.json
+remote: Found metadata for delete_ContactGroups__ContactGroupID__Contacts__ContactID_
+                           remote: Reading incoming ./lib/schemas/delete_ContactGroups__ContactGroupID__Contacts__ContactID_.in.json
+remote: Found metadata for x_related_model_ContactGroups__ContactGroupID__Contacts__ContactID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_ContactGroups__ContactGroupID__Contacts__ContactID_.in.json
+remote: Found metadata for get_Contacts
+                           remote: Reading incoming ./lib/schemas/get_Contacts.in.json
+remote: Found metadata for post_Contacts
+                           remote: Reading incoming ./lib/schemas/post_Contacts.in.json
+remote: Found metadata for put_Contacts
+                           remote: Reading incoming ./lib/schemas/put_Contacts.in.json
+remote: Found metadata for x_related_model_Contacts
+                           remote: Reading incoming ./lib/schemas/x_related_model_Contacts.in.json
+remote: Found metadata for get_Contacts__ContactID_
+                           remote: Reading incoming ./lib/schemas/get_Contacts__ContactID_.in.json
+remote: Found metadata for post_Contacts__ContactID_
+                           remote: Reading incoming ./lib/schemas/post_Contacts__ContactID_.in.json
+remote: Found metadata for x_related_model_Contacts__ContactID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Contacts__ContactID_.in.json
+remote: Found metadata for get_Contacts__ContactID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_Contacts__ContactID__Attachments.in.json
+remote: Found metadata for get_Contacts__ContactID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_Contacts__ContactID__Attachments__FileName_.in.json
+remote: Found metadata for post_Contacts__ContactID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_Contacts__ContactID__Attachments__FileName_.in.json
+remote: Found metadata for get_CreditNotes
+                           remote: Reading incoming ./lib/schemas/get_CreditNotes.in.json
+remote: Found metadata for post_CreditNotes
+                           remote: Reading incoming ./lib/schemas/post_CreditNotes.in.json
+remote: Found metadata for put_CreditNotes
+                           remote: Reading incoming ./lib/schemas/put_CreditNotes.in.json
+remote: Found metadata for x_related_model_CreditNotes
+                           remote: Reading incoming ./lib/schemas/x_related_model_CreditNotes.in.json
+remote: Found metadata for get_CreditNotes__CreditNoteID_
+                           remote: Reading incoming ./lib/schemas/get_CreditNotes__CreditNoteID_.in.json
+remote: Found metadata for post_CreditNotes__CreditNoteID_
+                           remote: Reading incoming ./lib/schemas/post_CreditNotes__CreditNoteID_.in.json
+remote: Found metadata for x_related_model_CreditNotes__CreditNoteID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_CreditNotes__CreditNoteID_.in.json
+remote: Found metadata for put_CreditNotes__CreditNoteID__Allocations
+                           remote: Reading incoming ./lib/schemas/put_CreditNotes__CreditNoteID__Allocations.in.json
+remote: Found metadata for x_related_model_CreditNotes__CreditNoteID__Allocations
+                           remote: Reading incoming ./lib/schemas/x_related_model_CreditNotes__CreditNoteID__Allocations.in.json
+remote: Found metadata for get_CreditNotes__CreditNoteID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_CreditNotes__CreditNoteID__Attachments.in.json
+remote: Found metadata for get_CreditNotes__CreditNoteID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_CreditNotes__CreditNoteID__Attachments__FileName_.in.json
+remote: Found metadata for post_CreditNotes__CreditNoteID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_CreditNotes__CreditNoteID__Attachments__FileName_.in.json
+remote: Found metadata for get_Currencies
+                           remote: Reading incoming ./lib/schemas/get_Currencies.in.json
+remote: Found metadata for put_Currencies
+                           remote: Reading incoming ./lib/schemas/put_Currencies.in.json
+remote: Found metadata for x_related_model_Currencies
+                           remote: Reading incoming ./lib/schemas/x_related_model_Currencies.in.json
+remote: Found metadata for get_Employees
+                           remote: Reading incoming ./lib/schemas/get_Employees.in.json
+remote: Found metadata for post_Employees
+                           remote: Reading incoming ./lib/schemas/post_Employees.in.json
+remote: Found metadata for put_Employees
+                           remote: Reading incoming ./lib/schemas/put_Employees.in.json
+remote: Found metadata for x_related_model_Employees
+                           remote: Reading incoming ./lib/schemas/x_related_model_Employees.in.json
+remote: Found metadata for get_Employees__EmployeeID_
+                           remote: Reading incoming ./lib/schemas/get_Employees__EmployeeID_.in.json
+remote: Found metadata for post_Employees__EmployeeID_
+                           remote: Reading incoming ./lib/schemas/post_Employees__EmployeeID_.in.json
+remote: Found metadata for x_related_model_Employees__EmployeeID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Employees__EmployeeID_.in.json
+remote: Found metadata for get_ExpenseClaims
+                           remote: Reading incoming ./lib/schemas/get_ExpenseClaims.in.json
+remote: Found metadata for post_ExpenseClaims
+                           remote: Reading incoming ./lib/schemas/post_ExpenseClaims.in.json
+remote: Found metadata for put_ExpenseClaims
+                           remote: Reading incoming ./lib/schemas/put_ExpenseClaims.in.json
+remote: Found metadata for x_related_model_ExpenseClaims
+                           remote: Reading incoming ./lib/schemas/x_related_model_ExpenseClaims.in.json
+remote: Found metadata for get_ExpenseClaims__ExpenseClaimID_
+                           remote: Reading incoming ./lib/schemas/get_ExpenseClaims__ExpenseClaimID_.in.json
+remote: Found metadata for post_ExpenseClaims__ExpenseClaimID_
+                           remote: Reading incoming ./lib/schemas/post_ExpenseClaims__ExpenseClaimID_.in.json
+remote: Found metadata for x_related_model_ExpenseClaims__ExpenseClaimID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_ExpenseClaims__ExpenseClaimID_.in.json
+remote: Found metadata for get_Invoices
+                           remote: Reading incoming ./lib/schemas/get_Invoices.in.json
+remote: Found metadata for post_Invoices
+                           remote: Reading incoming ./lib/schemas/post_Invoices.in.json
+remote: Found metadata for put_Invoices
+                           remote: Reading incoming ./lib/schemas/put_Invoices.in.json
+remote: Found metadata for x_related_model_Invoices
+                           remote: Reading incoming ./lib/schemas/x_related_model_Invoices.in.json
+remote: Found metadata for get_Invoices__InvoiceID_
+                           remote: Reading incoming ./lib/schemas/get_Invoices__InvoiceID_.in.json
+remote: Found metadata for post_Invoices__InvoiceID_
+                           remote: Reading incoming ./lib/schemas/post_Invoices__InvoiceID_.in.json
+remote: Found metadata for x_related_model_Invoices__InvoiceID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Invoices__InvoiceID_.in.json
+remote: Found metadata for get_Invoices__InvoiceID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_Invoices__InvoiceID__Attachments.in.json
+remote: Found metadata for get_Invoices__InvoiceID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_Invoices__InvoiceID__Attachments__FileName_.in.json
+remote: Found metadata for post_Invoices__InvoiceID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_Invoices__InvoiceID__Attachments__FileName_.in.json
+remote: Found metadata for get_Invoices__InvoiceID__OnlineInvoice
+                           remote: Reading incoming ./lib/schemas/get_Invoices__InvoiceID__OnlineInvoice.in.json
+remote: Found metadata for x_related_model_Invoices__InvoiceID__OnlineInvoice
+                           remote: Reading incoming ./lib/schemas/x_related_model_Invoices__InvoiceID__OnlineInvoice.in.json
+remote: Found metadata for get_Items
+                           remote: Reading incoming ./lib/schemas/get_Items.in.json
+remote: Found metadata for post_Items
+                           remote: Reading incoming ./lib/schemas/post_Items.in.json
+remote: Found metadata for put_Items
+                           remote: Reading incoming ./lib/schemas/put_Items.in.json
+remote: Found metadata for x_related_model_Items
+                           remote: Reading incoming ./lib/schemas/x_related_model_Items.in.json
+remote: Found metadata for delete_Items__ItemID_
+                           remote: Reading incoming ./lib/schemas/delete_Items__ItemID_.in.json
+remote: Found metadata for get_Items__ItemID_
+                           remote: Reading incoming ./lib/schemas/get_Items__ItemID_.in.json
+remote: Found metadata for post_Items__ItemID_
+                           remote: Reading incoming ./lib/schemas/post_Items__ItemID_.in.json
+remote: Found metadata for x_related_model_Items__ItemID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Items__ItemID_.in.json
+remote: Found metadata for get_Journals
+                           remote: Reading incoming ./lib/schemas/get_Journals.in.json
+remote: Found metadata for x_related_model_Journals
+                           remote: Reading incoming ./lib/schemas/x_related_model_Journals.in.json
+remote: Found metadata for get_Journals__JournalID_
+                           remote: Reading incoming ./lib/schemas/get_Journals__JournalID_.in.json
+remote: Found metadata for x_related_model_Journals__JournalID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Journals__JournalID_.in.json
+remote: Found metadata for get_LinkedTransactions
+                           remote: Reading incoming ./lib/schemas/get_LinkedTransactions.in.json
+remote: Found metadata for post_LinkedTransactions
+                           remote: Reading incoming ./lib/schemas/post_LinkedTransactions.in.json
+remote: Found metadata for put_LinkedTransactions
+                           remote: Reading incoming ./lib/schemas/put_LinkedTransactions.in.json
+remote: Found metadata for x_related_model_LinkedTransactions
+                           remote: Reading incoming ./lib/schemas/x_related_model_LinkedTransactions.in.json
+remote: Found metadata for delete_LinkedTransactions__LinkedTransactionID_
+                           remote: Reading incoming ./lib/schemas/delete_LinkedTransactions__LinkedTransactionID_.in.json
+remote: Found metadata for get_LinkedTransactions__LinkedTransactionID_
+                           remote: Reading incoming ./lib/schemas/get_LinkedTransactions__LinkedTransactionID_.in.json
+remote: Found metadata for post_LinkedTransactions__LinkedTransactionID_
+                           remote: Reading incoming ./lib/schemas/post_LinkedTransactions__LinkedTransactionID_.in.json
+remote: Found metadata for x_related_model_LinkedTransactions__LinkedTransactionID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_LinkedTransactions__LinkedTransactionID_.in.json
+remote: Found metadata for get_ManualJournals
+                           remote: Reading incoming ./lib/schemas/get_ManualJournals.in.json
+remote: Found metadata for post_ManualJournals
+                           remote: Reading incoming ./lib/schemas/post_ManualJournals.in.json
+remote: Found metadata for put_ManualJournals
+                           remote: Reading incoming ./lib/schemas/put_ManualJournals.in.json
+remote: Found metadata for x_related_model_ManualJournals
+                           remote: Reading incoming ./lib/schemas/x_related_model_ManualJournals.in.json
+remote: Found metadata for get_ManualJournals__ManualJournalID_
+                           remote: Reading incoming ./lib/schemas/get_ManualJournals__ManualJournalID_.in.json
+remote: Found metadata for post_ManualJournals__ManualJournalID_
+                           remote: Reading incoming ./lib/schemas/post_ManualJournals__ManualJournalID_.in.json
+remote: Found metadata for x_related_model_ManualJournals__ManualJournalID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_ManualJournals__ManualJournalID_.in.json
+remote: Found metadata for get_ManualJournals__ManualJournalID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_ManualJournals__ManualJournalID__Attachments.in.json
+remote: Found metadata for get_ManualJournals__ManualJournalID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_ManualJournals__ManualJournalID__Attachments__FileName_.in.json
+remote: Found metadata for post_ManualJournals__ManualJournalID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_ManualJournals__ManualJournalID__Attachments__FileName_.in.json
+remote: Found metadata for get_Organisation
+                           remote: Reading incoming ./lib/schemas/get_Organisation.in.json
+remote: Found metadata for x_related_model_Organisation
+                           remote: Reading incoming ./lib/schemas/x_related_model_Organisation.in.json
+remote: Found metadata for get_Organisation__ShortCode_
+                           remote: Reading incoming ./lib/schemas/get_Organisation__ShortCode_.in.json
+remote: Found metadata for x_related_model_Organisation__ShortCode_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Organisation__ShortCode_.in.json
+remote: Found metadata for get_Overpayments
+                           remote: Reading incoming ./lib/schemas/get_Overpayments.in.json
+remote: Found metadata for x_related_model_Overpayments
+                           remote: Reading incoming ./lib/schemas/x_related_model_Overpayments.in.json
+remote: Found metadata for get_Overpayments__OverpaymentID_
+                           remote: Reading incoming ./lib/schemas/get_Overpayments__OverpaymentID_.in.json
+remote: Found metadata for x_related_model_Overpayments__OverpaymentID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Overpayments__OverpaymentID_.in.json
+remote: Found metadata for put_Overpayments__OverpaymentID__Allocations
+                           remote: Reading incoming ./lib/schemas/put_Overpayments__OverpaymentID__Allocations.in.json
+remote: Found metadata for x_related_model_Overpayments__OverpaymentID__Allocations
+                           remote: Reading incoming ./lib/schemas/x_related_model_Overpayments__OverpaymentID__Allocations.in.json
+remote: Found metadata for get_Payments
+                           remote: Reading incoming ./lib/schemas/get_Payments.in.json
+remote: Found metadata for post_Payments
+                           remote: Reading incoming ./lib/schemas/post_Payments.in.json
+remote: Found metadata for put_Payments
+                           remote: Reading incoming ./lib/schemas/put_Payments.in.json
+remote: Found metadata for x_related_model_Payments
+                           remote: Reading incoming ./lib/schemas/x_related_model_Payments.in.json
+remote: Found metadata for get_Payments__PaymentID_
+                           remote: Reading incoming ./lib/schemas/get_Payments__PaymentID_.in.json
+remote: Found metadata for post_Payments__PaymentID_
+                           remote: Reading incoming ./lib/schemas/post_Payments__PaymentID_.in.json
+remote: Found metadata for x_related_model_Payments__PaymentID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Payments__PaymentID_.in.json
+remote: Found metadata for get_Prepayments
+                           remote: Reading incoming ./lib/schemas/get_Prepayments.in.json
+remote: Found metadata for x_related_model_Prepayments
+                           remote: Reading incoming ./lib/schemas/x_related_model_Prepayments.in.json
+remote: Found metadata for get_Prepayments__PrepaymentID_
+                           remote: Reading incoming ./lib/schemas/get_Prepayments__PrepaymentID_.in.json
+remote: Found metadata for x_related_model_Prepayments__PrepaymentID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Prepayments__PrepaymentID_.in.json
+remote: Found metadata for put_Prepayments__PrepaymentID__Allocations
+                           remote: Reading incoming ./lib/schemas/put_Prepayments__PrepaymentID__Allocations.in.json
+remote: Found metadata for x_related_model_Prepayments__PrepaymentID__Allocations
+                           remote: Reading incoming ./lib/schemas/x_related_model_Prepayments__PrepaymentID__Allocations.in.json
+remote: Found metadata for get_PurchaseOrders
+                           remote: Reading incoming ./lib/schemas/get_PurchaseOrders.in.json
+remote: Found metadata for post_PurchaseOrders
+                           remote: Reading incoming ./lib/schemas/post_PurchaseOrders.in.json
+remote: Found metadata for put_PurchaseOrders
+                           remote: Reading incoming ./lib/schemas/put_PurchaseOrders.in.json
+remote: Found metadata for x_related_model_PurchaseOrders
+                           remote: Reading incoming ./lib/schemas/x_related_model_PurchaseOrders.in.json
+remote: Found metadata for get_PurchaseOrders__PurchaseOrderID_
+                           remote: Reading incoming ./lib/schemas/get_PurchaseOrders__PurchaseOrderID_.in.json
+remote: Found metadata for post_PurchaseOrders__PurchaseOrderID_
+                           remote: Reading incoming ./lib/schemas/post_PurchaseOrders__PurchaseOrderID_.in.json
+remote: Found metadata for x_related_model_PurchaseOrders__PurchaseOrderID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_PurchaseOrders__PurchaseOrderID_.in.json
+remote: Found metadata for get_PurchaseOrders__PurchaseOrderID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_PurchaseOrders__PurchaseOrderID__Attachments.in.json
+remote: Found metadata for get_PurchaseOrders__PurchaseOrderID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_PurchaseOrders__PurchaseOrderID__Attachments__FileName_.in.json
+remote: Found metadata for post_PurchaseOrders__PurchaseOrderID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_PurchaseOrders__PurchaseOrderID__Attachments__FileName_.in.json
+remote: Found metadata for get_Receipts
+                           remote: Reading incoming ./lib/schemas/get_Receipts.in.json
+remote: Found metadata for post_Receipts
+                           remote: Reading incoming ./lib/schemas/post_Receipts.in.json
+remote: Found metadata for put_Receipts
+                           remote: Reading incoming ./lib/schemas/put_Receipts.in.json
+remote: Found metadata for x_related_model_Receipts
+                           remote: Reading incoming ./lib/schemas/x_related_model_Receipts.in.json
+remote: Found metadata for get_Receipts__ReceiptID_
+                           remote: Reading incoming ./lib/schemas/get_Receipts__ReceiptID_.in.json
+remote: Found metadata for post_Receipts__ReceiptID_
+                           remote: Reading incoming ./lib/schemas/post_Receipts__ReceiptID_.in.json
+remote: Found metadata for x_related_model_Receipts__ReceiptID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Receipts__ReceiptID_.in.json
+remote: Found metadata for get_Receipts__ReceiptID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_Receipts__ReceiptID__Attachments.in.json
+remote: Found metadata for get_Receipts__ReceiptID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_Receipts__ReceiptID__Attachments__FileName_.in.json
+remote: Found metadata for post_Receipts__ReceiptID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/post_Receipts__ReceiptID__Attachments__FileName_.in.json
+remote: Found metadata for get_RepeatingInvoices
+                           remote: Reading incoming ./lib/schemas/get_RepeatingInvoices.in.json
+remote: Found metadata for x_related_model_RepeatingInvoices
+                           remote: Reading incoming ./lib/schemas/x_related_model_RepeatingInvoices.in.json
+remote: Found metadata for get_RepeatingInvoices__RepeatingInvoiceID_
+                           remote: Reading incoming ./lib/schemas/get_RepeatingInvoices__RepeatingInvoiceID_.in.json
+remote: Found metadata for x_related_model_RepeatingInvoices__RepeatingInvoiceID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_RepeatingInvoices__RepeatingInvoiceID_.in.json
+remote: Found metadata for get_RepeatingInvoices__RepeatingInvoiceID__Attachments
+                           remote: Reading incoming ./lib/schemas/get_RepeatingInvoices__RepeatingInvoiceID__Attachments.in.json
+remote: Found metadata for get_RepeatingInvoices__RepeatingInvoiceID__Attachments__FileName_
+                           remote: Reading incoming ./lib/schemas/get_RepeatingInvoices__RepeatingInvoiceID__Attachments__FileName_.in.json
+remote: Found metadata for get_Reports
+                           remote: Reading incoming ./lib/schemas/get_Reports.in.json
+remote: Found metadata for x_related_model_Reports
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports.in.json
+remote: Found metadata for get_Reports_AgedPayablesByContact
+                           remote: Reading incoming ./lib/schemas/get_Reports_AgedPayablesByContact.in.json
+remote: Found metadata for x_related_model_Reports_AgedPayablesByContact
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_AgedPayablesByContact.in.json
+remote: Found metadata for get_Reports_AgedReceivablesByContact
+                           remote: Reading incoming ./lib/schemas/get_Reports_AgedReceivablesByContact.in.json
+remote: Found metadata for x_related_model_Reports_AgedReceivablesByContact
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_AgedReceivablesByContact.in.json
+remote: Found metadata for get_Reports_BalanceSheet
+                           remote: Reading incoming ./lib/schemas/get_Reports_BalanceSheet.in.json
+remote: Found metadata for x_related_model_Reports_BalanceSheet
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_BalanceSheet.in.json
+remote: Found metadata for get_Reports_BankStatement
+                           remote: Reading incoming ./lib/schemas/get_Reports_BankStatement.in.json
+remote: Found metadata for x_related_model_Reports_BankStatement
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_BankStatement.in.json
+remote: Found metadata for get_Reports_BankSummary
+                           remote: Reading incoming ./lib/schemas/get_Reports_BankSummary.in.json
+remote: Found metadata for x_related_model_Reports_BankSummary
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_BankSummary.in.json
+remote: Found metadata for get_Reports_BudgetSummary
+                           remote: Reading incoming ./lib/schemas/get_Reports_BudgetSummary.in.json
+remote: Found metadata for x_related_model_Reports_BudgetSummary
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_BudgetSummary.in.json
+remote: Found metadata for get_Reports_ExecutiveSummary
+                           remote: Reading incoming ./lib/schemas/get_Reports_ExecutiveSummary.in.json
+remote: Found metadata for x_related_model_Reports_ExecutiveSummary
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_ExecutiveSummary.in.json
+remote: Found metadata for get_Reports_ProfitAndLoss
+                           remote: Reading incoming ./lib/schemas/get_Reports_ProfitAndLoss.in.json
+remote: Found metadata for x_related_model_Reports_ProfitAndLoss
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_ProfitAndLoss.in.json
+remote: Found metadata for get_Reports_TenNinetyNine
+                           remote: Reading incoming ./lib/schemas/get_Reports_TenNinetyNine.in.json
+remote: Found metadata for x_related_model_Reports_TenNinetyNine
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_TenNinetyNine.in.json
+remote: Found metadata for get_Reports_TrialBalance
+                           remote: Reading incoming ./lib/schemas/get_Reports_TrialBalance.in.json
+remote: Found metadata for x_related_model_Reports_TrialBalance
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports_TrialBalance.in.json
+remote: Found metadata for get_Reports__ReportID_
+                           remote: Reading incoming ./lib/schemas/get_Reports__ReportID_.in.json
+remote: Found metadata for x_related_model_Reports__ReportID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Reports__ReportID_.in.json
+remote: Found metadata for get_TaxRates
+                           remote: Reading incoming ./lib/schemas/get_TaxRates.in.json
+remote: Found metadata for post_TaxRates
+                           remote: Reading incoming ./lib/schemas/post_TaxRates.in.json
+remote: Found metadata for put_TaxRates
+                           remote: Reading incoming ./lib/schemas/put_TaxRates.in.json
+remote: Found metadata for x_related_model_TaxRates
+                           remote: Reading incoming ./lib/schemas/x_related_model_TaxRates.in.json
+remote: Found metadata for get_TrackingCategories
+                           remote: Reading incoming ./lib/schemas/get_TrackingCategories.in.json
+remote: Found metadata for post_TrackingCategories
+                           remote: Reading incoming ./lib/schemas/post_TrackingCategories.in.json
+remote: Found metadata for put_TrackingCategories
+                           remote: Reading incoming ./lib/schemas/put_TrackingCategories.in.json
+remote: Found metadata for x_related_model_TrackingCategories
+                           remote: Reading incoming ./lib/schemas/x_related_model_TrackingCategories.in.json
+remote: Found metadata for delete_TrackingCategories__TrackingCategoryID_
+                           remote: Reading incoming ./lib/schemas/delete_TrackingCategories__TrackingCategoryID_.in.json
+remote: Found metadata for get_TrackingCategories__TrackingCategoryID_
+                           remote: Reading incoming ./lib/schemas/get_TrackingCategories__TrackingCategoryID_.in.json
+remote: Found metadata for post_TrackingCategories__TrackingCategoryID_
+                           remote: Reading incoming ./lib/schemas/post_TrackingCategories__TrackingCategoryID_.in.json
+remote: Found metadata for x_related_model_TrackingCategories__TrackingCategoryID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID_.in.json
+remote: Found metadata for put_TrackingCategories__TrackingCategoryID__Options
+                           remote: Reading incoming ./lib/schemas/put_TrackingCategories__TrackingCategoryID__Options.in.json
+remote: Found metadata for x_related_model_TrackingCategories__TrackingCategoryID__Options
+                           remote: Reading incoming ./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID__Options.in.json
+remote: Found metadata for delete_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_
+                           remote: Reading incoming ./lib/schemas/delete_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_.in.json
+remote: Found metadata for x_related_model_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_.in.json
+remote: Found metadata for get_Users
+                           remote: Reading incoming ./lib/schemas/get_Users.in.json
+remote: Found metadata for x_related_model_Users
+                           remote: Reading incoming ./lib/schemas/x_related_model_Users.in.json
+remote: Found metadata for get_Users__UserID_
+                           remote: Reading incoming ./lib/schemas/get_Users__UserID_.in.json
+remote: Found metadata for x_related_model_Users__UserID_
+                           remote: Reading incoming ./lib/schemas/x_related_model_Users__UserID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Users__UserID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Users__UserID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Users.in.json
+remote: Parsing incoming ./lib/schemas/get_Users.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_.in.json
+remote: Parsing incoming ./lib/schemas/delete_TrackingCategories__TrackingCategoryID__Options__TrackingOptionID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID__Options.in.json
+remote: Parsing incoming ./lib/schemas/put_TrackingCategories__TrackingCategoryID__Options.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_TrackingCategories__TrackingCategoryID_.in.json
+remote: Parsing incoming ./lib/schemas/post_TrackingCategories__TrackingCategoryID_.in.json
+remote: Parsing incoming ./lib/schemas/get_TrackingCategories__TrackingCategoryID_.in.json
+remote: Parsing incoming ./lib/schemas/delete_TrackingCategories__TrackingCategoryID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_TrackingCategories.in.json
+remote: Parsing incoming ./lib/schemas/put_TrackingCategories.in.json
+remote: Parsing incoming ./lib/schemas/post_TrackingCategories.in.json
+remote: Parsing incoming ./lib/schemas/get_TrackingCategories.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_TaxRates.in.json
+remote: Parsing incoming ./lib/schemas/put_TaxRates.in.json
+remote: Parsing incoming ./lib/schemas/post_TaxRates.in.json
+remote: Parsing incoming ./lib/schemas/get_TaxRates.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports__ReportID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports__ReportID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_TrialBalance.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_TrialBalance.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_TenNinetyNine.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_TenNinetyNine.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_ProfitAndLoss.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_ProfitAndLoss.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_ExecutiveSummary.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_ExecutiveSummary.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_BudgetSummary.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_BudgetSummary.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_BankSummary.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_BankSummary.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_BankStatement.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_BankStatement.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_BalanceSheet.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_BalanceSheet.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_AgedReceivablesByContact.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_AgedReceivablesByContact.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports_AgedPayablesByContact.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports_AgedPayablesByContact.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Reports.in.json
+remote: Parsing incoming ./lib/schemas/get_Reports.in.json
+remote: Parsing incoming ./lib/schemas/get_RepeatingInvoices__RepeatingInvoiceID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_RepeatingInvoices__RepeatingInvoiceID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_RepeatingInvoices__RepeatingInvoiceID_.in.json
+remote: Parsing incoming ./lib/schemas/get_RepeatingInvoices__RepeatingInvoiceID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_RepeatingInvoices.in.json
+remote: Parsing incoming ./lib/schemas/get_RepeatingInvoices.in.json
+remote: Parsing incoming ./lib/schemas/post_Receipts__ReceiptID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_Receipts__ReceiptID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_Receipts__ReceiptID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Receipts__ReceiptID_.in.json
+remote: Parsing incoming ./lib/schemas/post_Receipts__ReceiptID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Receipts__ReceiptID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Receipts.in.json
+remote: Parsing incoming ./lib/schemas/put_Receipts.in.json
+remote: Parsing incoming ./lib/schemas/post_Receipts.in.json
+remote: Parsing incoming ./lib/schemas/get_Receipts.in.json
+remote: Parsing incoming ./lib/schemas/post_PurchaseOrders__PurchaseOrderID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_PurchaseOrders__PurchaseOrderID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_PurchaseOrders__PurchaseOrderID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_PurchaseOrders__PurchaseOrderID_.in.json
+remote: Parsing incoming ./lib/schemas/post_PurchaseOrders__PurchaseOrderID_.in.json
+remote: Parsing incoming ./lib/schemas/get_PurchaseOrders__PurchaseOrderID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_PurchaseOrders.in.json
+remote: Parsing incoming ./lib/schemas/put_PurchaseOrders.in.json
+remote: Parsing incoming ./lib/schemas/post_PurchaseOrders.in.json
+remote: Parsing incoming ./lib/schemas/get_PurchaseOrders.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Prepayments__PrepaymentID__Allocations.in.json
+remote: Parsing incoming ./lib/schemas/put_Prepayments__PrepaymentID__Allocations.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Prepayments__PrepaymentID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Prepayments__PrepaymentID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Prepayments.in.json
+remote: Parsing incoming ./lib/schemas/get_Prepayments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Payments__PaymentID_.in.json
+remote: Parsing incoming ./lib/schemas/post_Payments__PaymentID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Payments__PaymentID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Payments.in.json
+remote: Parsing incoming ./lib/schemas/put_Payments.in.json
+remote: Parsing incoming ./lib/schemas/post_Payments.in.json
+remote: Parsing incoming ./lib/schemas/get_Payments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Overpayments__OverpaymentID__Allocations.in.json
+remote: Parsing incoming ./lib/schemas/put_Overpayments__OverpaymentID__Allocations.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Overpayments__OverpaymentID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Overpayments__OverpaymentID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Overpayments.in.json
+remote: Parsing incoming ./lib/schemas/get_Overpayments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Organisation__ShortCode_.in.json
+remote: Parsing incoming ./lib/schemas/get_Organisation__ShortCode_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Organisation.in.json
+remote: Parsing incoming ./lib/schemas/get_Organisation.in.json
+remote: Parsing incoming ./lib/schemas/post_ManualJournals__ManualJournalID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_ManualJournals__ManualJournalID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_ManualJournals__ManualJournalID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_ManualJournals__ManualJournalID_.in.json
+remote: Parsing incoming ./lib/schemas/post_ManualJournals__ManualJournalID_.in.json
+remote: Parsing incoming ./lib/schemas/get_ManualJournals__ManualJournalID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_ManualJournals.in.json
+remote: Parsing incoming ./lib/schemas/put_ManualJournals.in.json
+remote: Parsing incoming ./lib/schemas/post_ManualJournals.in.json
+remote: Parsing incoming ./lib/schemas/get_ManualJournals.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_LinkedTransactions__LinkedTransactionID_.in.json
+remote: Parsing incoming ./lib/schemas/post_LinkedTransactions__LinkedTransactionID_.in.json
+remote: Parsing incoming ./lib/schemas/get_LinkedTransactions__LinkedTransactionID_.in.json
+remote: Parsing incoming ./lib/schemas/delete_LinkedTransactions__LinkedTransactionID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_LinkedTransactions.in.json
+remote: Parsing incoming ./lib/schemas/put_LinkedTransactions.in.json
+remote: Parsing incoming ./lib/schemas/post_LinkedTransactions.in.json
+remote: Parsing incoming ./lib/schemas/get_LinkedTransactions.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Journals__JournalID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Journals__JournalID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Journals.in.json
+remote: Parsing incoming ./lib/schemas/get_Journals.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Items__ItemID_.in.json
+remote: Parsing incoming ./lib/schemas/post_Items__ItemID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Items__ItemID_.in.json
+remote: Parsing incoming ./lib/schemas/delete_Items__ItemID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Items.in.json
+remote: Parsing incoming ./lib/schemas/put_Items.in.json
+remote: Parsing incoming ./lib/schemas/post_Items.in.json
+remote: Parsing incoming ./lib/schemas/get_Items.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Invoices__InvoiceID__OnlineInvoice.in.json
+remote: Parsing incoming ./lib/schemas/get_Invoices__InvoiceID__OnlineInvoice.in.json
+remote: Parsing incoming ./lib/schemas/post_Invoices__InvoiceID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_Invoices__InvoiceID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_Invoices__InvoiceID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Invoices__InvoiceID_.in.json
+remote: Parsing incoming ./lib/schemas/post_Invoices__InvoiceID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Invoices__InvoiceID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Invoices.in.json
+remote: Parsing incoming ./lib/schemas/put_Invoices.in.json
+remote: Parsing incoming ./lib/schemas/post_Invoices.in.json
+remote: Parsing incoming ./lib/schemas/get_Invoices.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_ExpenseClaims__ExpenseClaimID_.in.json
+remote: Parsing incoming ./lib/schemas/post_ExpenseClaims__ExpenseClaimID_.in.json
+remote: Parsing incoming ./lib/schemas/get_ExpenseClaims__ExpenseClaimID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_ExpenseClaims.in.json
+remote: Parsing incoming ./lib/schemas/put_ExpenseClaims.in.json
+remote: Parsing incoming ./lib/schemas/post_ExpenseClaims.in.json
+remote: Parsing incoming ./lib/schemas/get_ExpenseClaims.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Employees__EmployeeID_.in.json
+remote: Parsing incoming ./lib/schemas/post_Employees__EmployeeID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Employees__EmployeeID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Employees.in.json
+remote: Parsing incoming ./lib/schemas/put_Employees.in.json
+remote: Parsing incoming ./lib/schemas/post_Employees.in.json
+remote: Parsing incoming ./lib/schemas/get_Employees.in.json
+remote: Detaching from log stream
+remote: Removing slug.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            remote: Parsing incoming ./lib/schemas/x_related_model_Currencies.in.json
+remote: Parsing incoming ./lib/schemas/put_Currencies.in.json
+remote: Parsing incoming ./lib/schemas/get_Currencies.in.json
+remote: Parsing incoming ./lib/schemas/post_CreditNotes__CreditNoteID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_CreditNotes__CreditNoteID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_CreditNotes__CreditNoteID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_CreditNotes__CreditNoteID__Allocations.in.json
+remote: Parsing incoming ./lib/schemas/put_CreditNotes__CreditNoteID__Allocations.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_CreditNotes__CreditNoteID_.in.json
+remote: Parsing incoming ./lib/schemas/post_CreditNotes__CreditNoteID_.in.json
+remote: Parsing incoming ./lib/schemas/get_CreditNotes__CreditNoteID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_CreditNotes.in.json
+remote: Parsing incoming ./lib/schemas/put_CreditNotes.in.json
+remote: Parsing incoming ./lib/schemas/post_CreditNotes.in.json
+remote: Parsing incoming ./lib/schemas/get_CreditNotes.in.json
+remote: Parsing incoming ./lib/schemas/post_Contacts__ContactID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_Contacts__ContactID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_Contacts__ContactID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Contacts__ContactID_.in.json
+remote: Parsing incoming ./lib/schemas/post_Contacts__ContactID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Contacts__ContactID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Contacts.in.json
+remote: Parsing incoming ./lib/schemas/put_Contacts.in.json
+remote: Parsing incoming ./lib/schemas/post_Contacts.in.json
+remote: Parsing incoming ./lib/schemas/get_Contacts.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_ContactGroups__ContactGroupID__Contacts__ContactID_.in.json
+remote: Parsing incoming ./lib/schemas/delete_ContactGroups__ContactGroupID__Contacts__ContactID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_ContactGroups__ContactGroupID__Contacts.in.json
+remote: Parsing incoming ./lib/schemas/put_ContactGroups__ContactGroupID__Contacts.in.json
+remote: Parsing incoming ./lib/schemas/delete_ContactGroups__ContactGroupID__Contacts.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_ContactGroups__ContactGroupID_.in.json
+remote: Parsing incoming ./lib/schemas/post_ContactGroups__ContactGroupID_.in.json
+remote: Parsing incoming ./lib/schemas/get_ContactGroups__ContactGroupID_.in.json
+remote: Parsing incoming ./lib/schemas/delete_ContactGroups__ContactGroupID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_ContactGroups.in.json
+remote: Parsing incoming ./lib/schemas/put_ContactGroups.in.json
+remote: Parsing incoming ./lib/schemas/post_ContactGroups.in.json
+remote: Parsing incoming ./lib/schemas/get_ContactGroups.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_BrandingThemes__BrandingThemeID_.in.json
+remote: Parsing incoming ./lib/schemas/get_BrandingThemes__BrandingThemeID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_BrandingThemes.in.json
+remote: Parsing incoming ./lib/schemas/get_BrandingThemes.in.json
+remote: Parsing incoming ./lib/schemas/post_BankTransfers__BankTransferID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_BankTransfers__BankTransferID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_BankTransfers__BankTransferID_.in.json
+remote: Parsing incoming ./lib/schemas/get_BankTransfers__BankTransferID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_BankTransfers.in.json
+remote: Parsing incoming ./lib/schemas/put_BankTransfers.in.json
+remote: Parsing incoming ./lib/schemas/get_BankTransfers.in.json
+remote: Parsing incoming ./lib/schemas/post_BankTransactions__BankTransactionID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_BankTransactions__BankTransactionID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_BankTransactions__BankTransactionID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_BankTransactions__BankTransactionID_.in.json
+remote: Parsing incoming ./lib/schemas/post_BankTransactions__BankTransactionID_.in.json
+remote: Parsing incoming ./lib/schemas/get_BankTransactions__BankTransactionID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_BankTransactions.in.json
+remote: Parsing incoming ./lib/schemas/put_BankTransactions.in.json
+remote: Parsing incoming ./lib/schemas/post_BankTransactions.in.json
+remote: Parsing incoming ./lib/schemas/get_BankTransactions.in.json
+remote: Parsing incoming ./lib/schemas/post_Accounts__AccountID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_Accounts__AccountID__Attachments__FileName_.in.json
+remote: Parsing incoming ./lib/schemas/get_Accounts__AccountID__Attachments.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Accounts__AccountID_.in.json
+remote: Parsing incoming ./lib/schemas/post_Accounts__AccountID_.in.json
+remote: Parsing incoming ./lib/schemas/get_Accounts__AccountID_.in.json
+remote: Parsing incoming ./lib/schemas/delete_Accounts__AccountID_.in.json
+remote: Parsing incoming ./lib/schemas/x_related_model_Accounts.in.json
+remote: Parsing incoming ./lib/schemas/put_Accounts.in.json
+remote: Parsing incoming ./lib/schemas/post_Accounts.in.json
+remote: Parsing incoming ./lib/schemas/get_Accounts.in.json
+remote: Build failed
+remote: Error: Unexpected end of JSON input
+remote: SyntaxError: Unexpected end of JSON input
+remote:     at JSON.parse (<anonymous>)
+remote:     at resolveMetadataFromPath (/home/node/lib/component-build-helper/dist/src/metaloader.js:76:40)
+remote:     at async Promise.all (index 140)
+remote:     at async Promise.all (index 1)
+remote:     at async validateComponentJSON (/home/node/lib/component-build-helper/dist/src/metaloader.js:104:5)
+remote:     at async Object.processPush (/home/node/gitreceiver/src/lib/receiver.js:35:27)
+remote: {"name":"gitreceiver","hostname":"gitreceiver-85cbdb886d-68nfn","pid":"10441","level":"50","err":{"message":"Unexpected end of JSON input","name":"SyntaxError","stack":"SyntaxError: Unexpected end of JSON input\n    at JSON.parse (<anonymous>)\n    at resolveMetadataFromPath (/home/node/lib/component-build-helper/dist/src/metaloader.js:76:40)\n    at async Promise.all (index 140)\n    at async Promise.all (index 1)\n    at async validateComponentJSON (/home/node/lib/component-build-helper/dist/src/metaloader.js:104:5)\n    at async Object.processPush (/home/node/gitreceiver/src/lib/receiver.js:35:27)"},"msg":"Unexpected end of JSON input","time":"2022-03-02T12:45:54.420Z","v":"0"}
+To git.thatapp.io:Xero-com-connector.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'git.thatapp.io:Xero-com-connector.git'
