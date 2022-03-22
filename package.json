@@ -3,13 +3,31 @@
     "version": "2.0.0",
     "description": "# Introduction\nThe Xero Accounting API is a RESTful web service and uses the OAuth (v1.0a) protocol to authenticate 3rd party applications. The Accounting API exposes accounting and related functions of the main Xero application and can be used for a variety of purposes such as creating transactions like invoices and credit notes, right through to extracting accounting data via our reports endpoint.\n",
     "main": "component.json",
+    "engines": {
+      "node": "14"
+    },
+    "scripts": {
+      "test": "exit 0"
+    },
     "dependencies": {
-        "elasticio-node": "0.0.9",
-        "elasticio-sailor-nodejs": "^2.2.1",
-        "swagger-client": "^3.8.22"
+      "@elastic.io/component-commons-library": "1.1.5",
+      "chai": "4.2.0",
+      "elasticio-node": "0.0.9",
+      "elasticio-sailor-nodejs": "2.6.26",
+      "mocha": "8.2.1",
+      "request": "2.88.0",
+      "sinon": "9.2.3",
+      "axios": "^0.24.0",
+      "swagger-client": "^3.8.22"
     },
     "author": {
-        "name": "Deutsche Telekom AG"
+      "name": "Kareem Yomi, William Nwogbo"
     },
-    "license": "Apache-2.0"
-}
+    "license": "ISC",
+    "devDependencies": {
+      "@elastic.io/component-logger": "0.0.1",
+      "eslint": "7.17.0",
+      "eslint-config-airbnb-base": "14.2.1",
+      "eslint-plugin-import": "2.22.1"
+    }
+  }
